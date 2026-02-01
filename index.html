@@ -15,7 +15,7 @@
   <body>
     <div class="container mt-5">
       <div class="titlepago">
-        <div class="row">
+        <div class="row g-2">
           <div class="col text-center">
             <h1 class="text-start bg-light p-3 rounded">
               Payment form example
@@ -25,8 +25,8 @@
       </div>
 
       <div class="container">
-        <div class="row">
-          <div class="row">
+        <div class="row g-2">
+          <div class="row g-2">
             <div
               class="col align-self-start text-black p-3 rounded alert alert-danger"
               role="alert"
@@ -34,7 +34,7 @@
               <p>Some fields are missing</p>
             </div>
             <div class="container">
-              <div class="row">
+              <div class="row g-2">
                 <div class="col-4 col-sm-4">Card #</div>
                 <div class="col-4 col-sm-4">CVC #</div>
                 <div class="col-4 col-sm-4">Amount</div>
@@ -71,23 +71,68 @@
               </div>
             </div>
             <div class="container">
-              <div class="row">
+              <div class="row g-2">
                 <div class="col-6">
-                  <div class="row">
-                    <div class="col-12 mb-1 mt-1 p-1">First name</div>
-                    <div class="col-12  mb-1 mt-1 p-1">
+                  <div class="row g-3">
+                    <div class="col-12 g-4"> First name
                       <input
                         type="text"
                         class="form-control"
                         placeholder="First name"
                       />
                     </div>
+                    <div class="col-12">City
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="col-12 g-4">We accept
+  <div class="bg-secondary text-white rounded p-3">
+
+    <div class="mb-2 fw-semibold"></div>
+
+    <div class="d-flex align-items-center gap-3 flex-wrap">
+
+      <div class="form-check form-check-inline m-0">
+        <input class="form-check-input" type="radio" name="payment" id="visa">
+        <label class="form-check-label d-flex align-items-center gap-2" for="visa">
+          <i class="fa-brands fa-cc-visa fs-4"></i> Visa
+        </label>
+      </div>
+
+      <div class="form-check form-check-inline m-0">
+        <input class="form-check-input" type="radio" name="payment" id="mastercard">
+        <label class="form-check-label d-flex align-items-center gap-2" for="mastercard">
+          <i class="fa-brands fa-cc-mastercard fs-4"></i> MasterC
+        </label>
+      </div>
+
+      <div class="form-check form-check-inline m-0">
+        <input class="form-check-input" type="radio" name="payment" id="amex">
+        <label class="form-check-label d-flex align-items-center gap-2" for="amex">
+          <i class="fa-brands fa-cc-amex fs-4"></i> Amex
+        </label>
+      </div>
+
+      <div class="form-check form-check-inline m-0">
+        <input class="form-check-input" type="radio" name="payment" id="paypal">
+        <label class="form-check-label d-flex align-items-center gap-2" for="paypal">
+          <i class="fa-brands fa-cc-paypal fs-4"></i> PP
+        </label>
+      </div>
+
+    </div>
+  </div>
+</div>
+
                   </div>
                 </div>
 <div class="col-6">
-  <div class="row">
+  <div class="row g-2">
 
-    <div class="col-12 mb-1">
+    <div class="col-12">
       <label class="form-label">Last name</label>
       <input
         type="text"
@@ -96,7 +141,7 @@
       />
     </div>
    </div>
-   <div class="row">
+   <div class="row g-2">
     <div class="col-6 col">
       <label class="form-label">State</label>
       <select class="form-select">
@@ -117,7 +162,7 @@
         placeholder="Postal Code"
       />
     </div>
-    <div class = "row"> <div class="col-12 mt-3">
+    <div class = "row g-2"> <div class="col-12 mt-3">
       <label for="message" class="form-label">Message</label>
       <textarea
        id="message"
@@ -137,7 +182,7 @@
             </div>
           </div>
           <div class = "container">
-            <div class = "row">
+            <div class = "row g-2">
               <div class = "col-12 text-end mt-4 mb-4">
                 <button type="button" class="btn btn-secondary btn-lg">
                   Cancel
