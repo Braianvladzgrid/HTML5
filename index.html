@@ -10,10 +10,14 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+      
     />
   </head>
   <body>
-    <div class="container mt-5">
+    <div class="container mt-5 bg-light">
       <div class="titlepago">
         <div class="row g-2">
           <div class="col text-center">
@@ -74,21 +78,24 @@
               <div class="row g-2">
                 <div class="col-6">
                   <div class="row g-3">
-                    <div class="col-12 g-4"> First name
+                    <div class="col-12"> 
+                      <label class="form-label">First name</label>
                       <input
                         type="text"
                         class="form-control"
                         placeholder="First name"
                       />
                     </div>
-                    <div class="col-12">City
+                    <div class="col-12">
+                      <label class="form-label">City</label>
                       <input
                         type="text"
                         class="form-control"
                         placeholder="City"
                       />
                     </div>
-                    <div class="col-12 g-4">We accept
+                      <label class="form-label">We accept</label>
+                    <div class="col-12 g-4">
   <div class="bg-secondary text-white rounded p-3">
 
     <div class="mb-2 fw-semibold"></div>
@@ -104,8 +111,10 @@
 
       <div class="form-check form-check-inline m-0">
         <input class="form-check-input" type="radio" name="payment" id="mastercard">
-        <label class="form-check-label d-flex align-items-center gap-2" for="mastercard">
-          <i class="fa-brands fa-cc-mastercard fs-4"></i> MasterC
+        <label class="form-check-label d-flex align-items-center gap-2 text-white" for="mastercard">
+          <i class="fa-brands fa-cc-mastercard fs-4 text-white"></i>
+<span class="text-white">MasterCard</span>
+
         </label>
       </div>
 
@@ -142,7 +151,7 @@
     </div>
    </div>
    <div class="row g-2">
-    <div class="col-6 col">
+    <div class="col-6">
       <label class="form-label">State</label>
       <select class="form-select">
         <option selected disabled>Select state</option>
@@ -169,7 +178,9 @@
        class="form-control"
        rows="4"
       placeholder="Write your message here..."
-  ></textarea> Add any notes here.
+  ></textarea>
+      <label for="message" class="form-label">Add any notes here.</label>
+   
 </div>
     </div>
 
